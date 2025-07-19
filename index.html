@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - MyResume Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .hero-bg-zoom {
+      position: relative;
+      background: url('neon%20image/milad-fakurian-58Z17lnVS4U-unsplash.jpg') center center/cover no-repeat;
+      min-height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: transform 1.2s cubic-bezier(0.4,0,0.2,1), filter 1.2s cubic-bezier(0.4,0,0.2,1);
+      transform: scale(1.08);
+      filter: blur(4px);
+    }
+    .hero-bg-zoom::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,0.75);
+      z-index: 1;
+    }
+    .hero-bg-zoom .container, .hero-bg-zoom .row {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-bg-zoom.zoom-in-hero {
+      transform: scale(1);
+      filter: blur(0);
+    }
+    .portfolio-card {
+      transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(.4,0,.2,1);
+    }
+    .portfolio-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      z-index: 2;
+    }
+    .portfolio-thumb img {
+      transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+    }
+    .portfolio-card:hover .portfolio-thumb img {
+      transform: scale(1.07) rotate(-1deg);
+    }
+    .section-bg {
+      background: #f8f9fa;
+      border-radius: 1rem;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.03);
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+    }
+    .section-divider {
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #0d6efd 0%, #0dcaf0 100%);
+      border-radius: 2px;
+      margin: 1.5rem auto 2rem auto;
+      opacity: 0.7;
+    }
+    .badge-skill {
+      background: #e9ecef;
+      color: #0d6efd;
+      font-weight: 500;
+      margin: 0.2rem 0.3rem 0.2rem 0;
+      font-size: 0.95em;
+      border-radius: 0.5rem;
+      padding: 0.4em 0.9em;
+      display: inline-block;
+    }
+    .timeline {
+      border-left: 3px solid #0d6efd;
+      margin-left: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .timeline-item:before {
+      content: '';
+      position: absolute;
+      left: -1.7rem;
+      top: 0.2rem;
+      width: 1.1rem;
+      height: 1.1rem;
+      background: #fff;
+      border: 3px solid #0d6efd;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .cta-btn {
+      background: linear-gradient(90deg, #0d6efd 0%, #0dcaf0 100%);
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.7em 2em;
+      font-size: 1.1em;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(13,110,253,0.08);
+      transition: background 0.3s;
+    }
+    .cta-btn:hover {
+      background: linear-gradient(90deg, #0dcaf0 0%, #0d6efd 100%);
+      color: #fff;
+    }
+    .footer-accent {
+      font-size: 1.1em;
+      color: #0d6efd;
+      font-weight: 500;
+      margin-top: 1.5rem;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background hero-bg-zoom">
+      <!-- Removed hero image as it's not relevant -->
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2>Badal Raj</h2>
+            <p>B. Tech CSE Student | Software Developer</p>
+            <div class="social-links">
+              <a href="mailto:badalrajrs@gmail.com"><i class="bi bi-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/badal-raj-1b8b28249/"><i class="bi bi-linkedin"></i></a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section section-bg">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Passionate and driven B. Tech Computer Science student at Technocrats Institute of Technology (2022–2026), with hands-on experience in building full-stack, AI-based applications. Proficient in C++, with a working knowledge of React, Vite, and Python (fundamentals). Interested in AI/ML (basics), data analysis, and NLP. Eager to contribute to innovative software engineering teams and build impactful systems from the ground up.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <!-- Removed profile image as it's not relevant -->
+          <div class="col-lg-8 content">
+            <h2>B. Tech CSE Student &amp; Software Developer</h2>
+            <p class="fst-italic py-3">
+              Passionate about building scalable, user-centric solutions. Focused on AI-powered projects and NLP. Eager to learn and contribute to impactful teams.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>badalrajraj825@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a href="https://www.linkedin.com/in/badal-raj-1b8b28249/">badal-raj-1b8b28249</a></span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B. Tech (CSE)</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>College:</strong> <span>Technocrats Institute of Technology</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Team collaborator, problem solver, and quick learner. Interested in AI, NLP, and scalable backend systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section section-bg">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="section-divider"></div>
+        <div class="mb-3">
+          <span class="badge-skill">C++</span>
+          <span class="badge-skill">Python (basics)</span>
+          <span class="badge-skill">JavaScript (basics)</span>
+          <span class="badge-skill">React</span>
+          <span class="badge-skill">Vite</span>
+          <span class="badge-skill">TypeScript</span>
+          <span class="badge-skill">Node.js (basics)</span>
+          <span class="badge-skill">Git</span>
+          <span class="badge-skill">Postman</span>
+          <span class="badge-skill">VS Code</span>
+          <span class="badge-skill">Team Collaboration</span>
+          <span class="badge-skill">Problem Solving</span>
+          <span class="badge-skill">Communication</span>
+        </div>
+      </div>
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section section-bg">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <div class="section-divider"></div>
+        <p>Below is a summary of my education, projects, and skills as a B. Tech CSE student and software developer.</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Objective</h3>
+            <div class="resume-item pb-0">
+              <h4>Badal Raj</h4>
+              <p><em>Passionate and driven B. Tech Computer Science student at Technocrats Institute of Technology (2022–2026), with hands-on experience in building full-stack, AI-based applications. Proficient in C++, with a working knowledge of React, Vite, and Python (fundamentals). Interested in AI/ML (basics), data analysis, and NLP. Eager to contribute to innovative software engineering teams and build impactful systems from the ground up.</em></p>
+              <ul>
+                <li>Email: badalrajrs@gmail.com</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/badal-raj-1b8b28249/">badal-raj-1b8b28249</a></li>
+              </ul>
+            </div>
+            <h3 class="resume-title">Education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <h5>Bachelor of Technology (Computer Science and Engineering) <span class="badge bg-primary ms-2">2022 - 2026</span></h5>
+                <p class="mb-1"><em>Technocrats Institute of Technology, Bhopal</em></p>
+                <p class="mb-0">CGPA (Till 4th Sem): <span class="badge bg-success">8.0</span></p>
+              </div>
+              <div class="timeline-item">
+                <h5>Senior Secondary (CBSE) <span class="badge bg-primary ms-2">2021 - 2022</span></h5>
+                <p class="mb-1"><em>Sanskar School, Bhopal</em></p>
+                <p class="mb-0">Percentage: <span class="badge bg-info text-dark">87%</span></p>
+              </div>
+              <div class="timeline-item">
+                <h5>Secondary (CBSE) <span class="badge bg-primary ms-2">2019 - 2020</span></h5>
+                <p class="mb-1"><em>BNS DAV Public School, Giridih</em></p>
+                <p class="mb-0">Percentage: <span class="badge bg-info text-dark">89%</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Projects</h3>
+            <div class="resume-item">
+              <h4>AI-Enabled Bank Management System <span class="badge bg-success ms-2">Full Stack</span></h4>
+              <p>Built a full-stack banking platform using React, Vite, TypeScript, and Node.js for real-time fraud detection, reducing false positives by 4%. Designed scalable data storage, enabling flexible data and API integration. Applied web security and testing. Notable for smart design and reliability.</p>
+            </div>
+            <div class="resume-item">
+              <h4>DeepWebResearch (Minor Project) <span class="badge bg-info text-dark ms-2">NLP / Research</span></h4>
+              <p>Built a full-stack AI-powered research platform to retrieve and analyze academic papers and web data. Deployed with custom NLP models and smart PostgreSQL-based workflows. Applied advanced search, ensured stability with unit and integration tests.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section" style="background: #f8f9fa;">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p class="text-muted mb-4">A selection of my most impactful projects, showcasing my skills in AI, full-stack development, and research platforms. Click on any project to see more details.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <!-- Nebula Project Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 portfolio-card shadow-sm border-0" data-aos="zoom-in" data-aos-delay="100">
+              <div class="portfolio-thumb position-relative rounded-top overflow-hidden">
+                <img src="neon%20image/milad-fakurian-58Z17lnVS4U-unsplash.jpg" alt="Nebula Project" class="img-fluid w-100" style="height: 180px; object-fit: cover;">
+                <span class="badge bg-primary position-absolute top-0 start-0 m-2">AI / Brain-Inspired</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-2"><span class="text-primary">&#9679;</span> Nebula Project</h5>
+                <p class="card-text small">A multi-phase, brain-inspired AI system simulating cognitive processes using modular, biologically plausible architectures. Focuses on memory, learning, semantic mapping, and curiosity-driven exploration without LLMs or transformers.</p>
+                <a href="portfolio-nebula.html" class="btn btn-outline-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- Bank Management Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 portfolio-card shadow-sm border-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="portfolio-thumb position-relative rounded-top overflow-hidden">
+                <img src="bank%20image/bryan-dijkhuizen-fLkRdAL66vU-unsplash.jpg" alt="Bank Management System" class="img-fluid w-100" style="height: 180px; object-fit: cover;">
+                <span class="badge bg-success position-absolute top-0 start-0 m-2">Full Stack</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-2"><span class="text-success">&#9679;</span> AI-Enabled Bank Management System</h5>
+                <p class="card-text small">A full-stack banking platform using React, Vite, TypeScript, and Node.js for real-time fraud detection, scalable data storage, and secure, reliable web design.</p>
+                <a href="portfolio-bank.html" class="btn btn-outline-success mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- DeepWebResearch Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 portfolio-card shadow-sm border-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="portfolio-thumb position-relative rounded-top overflow-hidden">
+                <img src="dwr%20image/markus-spiske-BbDb3IMR_rs-unsplash.jpg" alt="DeepWebResearch" class="img-fluid w-100" style="height: 180px; object-fit: cover;">
+                <span class="badge bg-info text-dark position-absolute top-0 start-0 m-2">NLP / Research</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-2"><span class="text-info">&#9679;</span> DeepWebResearch (Minor Project)</h5>
+                <p class="card-text small">An AI-powered research platform for retrieving and analyzing academic papers and web data, featuring custom NLP models and advanced search with PostgreSQL workflows.</p>
+                <a href="portfolio-deepweb.html" class="btn btn-outline-info mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <!-- Removed entire services section as it is not relevant -->
+
+    <!-- Testimonials Section -->
+    <!-- Removed entire testimonials section as it is not relevant -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact me via email or LinkedIn for collaboration or opportunities.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Bhopal, India</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>(not available)</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>badalrajrs@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Badal Raj</h3>
+      <p>B. Tech CSE Student | Software Developer</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="mailto:badalrajrs@gmail.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/badal-raj-1b8b28249/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Badal Raj</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distribuited by <a href="https://themewagon.com">ThemeWagon</a>
+          <div class="footer-accent">Made with <span style="color:#e25555;">&#10084;</span> by Badal Raj</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      var preloader = document.getElementById('preloader');
+      var heros = document.querySelectorAll('.hero-bg-zoom');
+      function animateHeros() {
+        heros.forEach(function(hero) {
+          hero.classList.add('zoom-in-hero');
+        });
+      }
+      if (preloader) {
+        var observer = new MutationObserver(function() {
+          if (preloader.style.display === 'none') {
+            animateHeros();
+            observer.disconnect();
+          }
+        });
+        observer.observe(preloader, { attributes: true, attributeFilter: ['style'] });
+        if (preloader.style.display === 'none') {
+          animateHeros();
+        }
+      } else {
+        setTimeout(animateHeros, 200);
+      }
+    });
+  </script>
+  <!-- Add AOS init if not present -->
+  <script>
+    if (typeof AOS !== 'undefined') {
+      AOS.init({ once: true });
+    }
+  </script>
+</body>
+
+</html>

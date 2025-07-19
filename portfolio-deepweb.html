@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>DeepWebResearch - Portfolio</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .hero-bg-zoom {
+      position: relative;
+      background: url('dwr%20image/markus-spiske-BbDb3IMR_rs-unsplash.jpg') center center/cover no-repeat;
+      min-height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: transform 1.2s cubic-bezier(0.4,0,0.2,1), filter 1.2s cubic-bezier(0.4,0,0.2,1);
+      transform: scale(1.08);
+      filter: blur(4px);
+    }
+    .hero-bg-zoom::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,0.75);
+      z-index: 1;
+    }
+    .hero-bg-zoom .container, .hero-bg-zoom .row {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-bg-zoom.zoom-in-hero {
+      transform: scale(1);
+      filter: blur(0);
+    }
+  </style>
+</head>
+<body>
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <!-- Project Hero Section -->
+    <section class="hero section light-background hero-bg-zoom" data-aos="fade-up">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <a href="index.html#portfolio" class="btn btn-outline-secondary mb-4"><i class="bi bi-arrow-left"></i> Back to Portfolio</a>
+            <h1 class="mb-3">DeepWebResearch</h1>
+            <h4 class="text-muted mb-4">AI-Powered Research Platform for Academic & Web Data Analysis</h4>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-calendar3 me-2"></i>
+                  <span><strong>Duration:</strong> 4 months (2023)</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-person-workspace me-2"></i>
+                  <span><strong>Role:</strong> Full-Stack Developer & AI Engineer</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-mortarboard me-2"></i>
+                  <span><strong>Type:</strong> Academic Research Platform</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-code-slash me-2"></i>
+                  <span><strong>Stack:</strong> Python, NLP, PostgreSQL</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-search me-2"></i>
+                  <span><strong>Core:</strong> Advanced Search & Analysis</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-cpu me-2"></i>
+                  <span><strong>AI:</strong> Custom NLP Models</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="section" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h3 class="mb-4"><i class="bi bi-info-circle me-2"></i>Project Overview</h3>
+            <p class="lead">DeepWebResearch is an innovative AI-powered research platform designed to revolutionize how researchers and academics access, analyze, and synthesize information from academic papers and web data. The platform combines advanced natural language processing with intelligent search algorithms to provide comprehensive research insights.</p>
+            <p>The system addresses the growing challenge of information overload in academic research by providing intelligent filtering, semantic analysis, and automated synthesis of research findings. By leveraging custom NLP models and PostgreSQL-based workflows, the platform delivers accurate, relevant, and actionable research insights.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-target me-2"></i>Key Objectives</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle text-success me-2"></i>Automated research data retrieval</li>
+                  <li><i class="bi bi-check-circle text-success me-2"></i>Intelligent content analysis</li>
+                  <li><i class="bi bi-check-circle text-success me-2"></i>Advanced search capabilities</li>
+                  <li><i class="bi bi-check-circle text-success me-2"></i>Stable, tested workflows</li>
+                  <li><i class="bi bi-check-circle text-success me-2"></i>Scalable architecture</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section class="section light-background" data-aos="fade-up" data-aos-delay="200">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-diagram-3 me-2"></i>Technical Architecture</h3>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-cpu me-2"></i>AI & NLP Engine</h5>
+                <ul>
+                  <li><strong>Custom NLP Models:</strong> Specialized models for academic text analysis</li>
+                  <li><strong>Text Processing Pipeline:</strong> Advanced preprocessing and feature extraction</li>
+                  <li><strong>Semantic Analysis:</strong> Understanding context and meaning in research papers</li>
+                  <li><strong>Entity Recognition:</strong> Identifying key concepts, authors, and institutions</li>
+                  <li><strong>Sentiment Analysis:</strong> Evaluating research impact and relevance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-database me-2"></i>Data & Search Architecture</h5>
+                <ul>
+                  <li><strong>PostgreSQL Database:</strong> Robust data storage with advanced querying</li>
+                  <li><strong>Search Engine:</strong> Full-text search with relevance ranking</li>
+                  <li><strong>Data Integration:</strong> Multiple academic and web sources</li>
+                  <li><strong>Workflow Management:</strong> Automated data processing pipelines</li>
+                  <li><strong>API Integration:</strong> Seamless connection to external research databases</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section" data-aos="fade-up" data-aos-delay="300">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-star me-2"></i>Key Features & Capabilities</h3>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-search display-4 text-primary mb-3"></i>
+              <h5>Advanced Search</h5>
+              <p>Intelligent search algorithms with semantic understanding, supporting complex queries and filters for precise research discovery.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-brain display-4 text-primary mb-3"></i>
+              <h5>Custom NLP Models</h5>
+              <p>Specialized natural language processing models trained on academic content for accurate text analysis and understanding.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-graph-up display-4 text-primary mb-3"></i>
+              <h5>Data Analysis</h5>
+              <p>Comprehensive analysis tools for extracting insights, trends, and patterns from research papers and web content.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-database display-4 text-primary mb-3"></i>
+              <h5>PostgreSQL Workflows</h5>
+              <p>Robust database architecture with optimized workflows for efficient data storage, retrieval, and processing.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-shield-check display-4 text-primary mb-3"></i>
+              <h5>Stability & Testing</h5>
+              <p>Comprehensive unit and integration testing ensuring reliable performance and data accuracy across all operations.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-arrow-repeat display-4 text-primary mb-3"></i>
+              <h5>Automated Processing</h5>
+              <p>Intelligent automation of research workflows, from data collection to analysis and report generation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section light-background" data-aos="fade-up" data-aos-delay="400">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-tools me-2"></i>Technology Stack</h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h5><i class="bi bi-cpu me-2"></i>AI & Machine Learning</h5>
+            <div class="row g-2">
+              <div class="col-6">
+                <span class="badge bg-primary fs-6 p-2 mb-2 d-block">Python</span>
+              </div>
+              <div class="col-6">
+                <span class="badge bg-info fs-6 p-2 mb-2 d-block">NLP Models</span>
+              </div>
+              <div class="col-6">
+                <span class="badge bg-success fs-6 p-2 mb-2 d-block">TensorFlow</span>
+              </div>
+              <div class="col-6">
+                <span class="badge bg-warning fs-6 p-2 mb-2 d-block">Scikit-learn</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5><i class="bi bi-database me-2"></i>Data & Infrastructure</h5>
+            <div class="row g-2">
+              <div class="col-6">
+                <span class="badge bg-success fs-6 p-2 mb-2 d-block">PostgreSQL</span>
+              </div>
+              <div class="col-6">
+                <span class="badge bg-info fs-6 p-2 mb-2 d-block">Elasticsearch</span>
+              </div>
+              <div class="col-6">
+                <span class="badge bg-warning fs-6 p-2 mb-2 d-block">Redis</span>
+              </div>
+              <div class="col-6">
+                <span class="badge bg-primary fs-6 p-2 mb-2 d-block">Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenges & Solutions -->
+    <section class="section" data-aos="fade-up" data-aos-delay="500">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-exclamation-triangle me-2"></i>Challenges & Solutions</h3>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card border-warning">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-question-circle me-2"></i>Key Challenges</h5>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li><strong>Data Quality:</strong> Ensuring accuracy and relevance of retrieved research data</li>
+                  <li><strong>Search Accuracy:</strong> Balancing precision and recall in search results</li>
+                  <li><strong>Processing Speed:</strong> Handling large volumes of academic papers efficiently</li>
+                  <li><strong>Model Training:</strong> Developing effective NLP models for academic content</li>
+                  <li><strong>System Stability:</strong> Maintaining reliable performance under varying loads</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-success">
+              <div class="card-header bg-success text-white">
+                <h5 class="mb-0"><i class="bi bi-lightbulb me-2"></i>Innovative Solutions</h5>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li><strong>Custom NLP Pipeline:</strong> Developed specialized models for academic text processing</li>
+                  <li><strong>Advanced Search Algorithms:</strong> Implemented semantic search with relevance ranking</li>
+                  <li><strong>Optimized Database Design:</strong> Created efficient PostgreSQL schemas and queries</li>
+                  <li><strong>Comprehensive Testing:</strong> Built robust unit and integration test suites</li>
+                  <li><strong>Scalable Architecture:</strong> Designed modular system for easy expansion</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Outcomes -->
+    <section class="section light-background" data-aos="fade-up" data-aos-delay="600">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-graph-up me-2"></i>Project Outcomes & Impact</h3>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card text-center h-100 border-primary">
+              <div class="card-body">
+                <i class="bi bi-search display-4 text-primary mb-3"></i>
+                <h5>Search Accuracy</h5>
+                <h3 class="text-primary">92%</h3>
+                <p>Precision rate in retrieving relevant research papers and academic content</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-center h-100 border-success">
+              <div class="card-body">
+                <i class="bi bi-speedometer2 display-4 text-success mb-3"></i>
+                <h5>Processing Speed</h5>
+                <h3 class="text-success">3x</h3>
+                <p>Faster research data processing compared to traditional methods</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-center h-100 border-info">
+              <div class="card-body">
+                <i class="bi bi-shield-check display-4 text-info mb-3"></i>
+                <h5>System Stability</h5>
+                <h3 class="text-info">99.5%</h3>
+                <p>Uptime reliability with comprehensive testing and error handling</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Achievements -->
+    <section class="section" data-aos="fade-up" data-aos-delay="700">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-award me-2"></i>Technical Achievements</h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-trophy me-2"></i>AI & ML Excellence</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle me-2"></i>Custom NLP models for academic content</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Advanced semantic search capabilities</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Intelligent data analysis and insights</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Automated research workflow processing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-success text-white">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-graph-up-arrow me-2"></i>Research Impact</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle me-2"></i>Accelerated research discovery process</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Improved academic content accessibility</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Enhanced research collaboration capabilities</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Reduced time-to-insight for researchers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Badal Raj</h3>
+      <p>B. Tech CSE Student | Software Developer</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="mailto:badalrajrs@gmail.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/badal-raj-1b8b28249/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Badal Raj</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distribuited by <a href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      var preloader = document.getElementById('preloader');
+      var heros = document.querySelectorAll('.hero-bg-zoom');
+      function animateHeros() {
+        heros.forEach(function(hero) {
+          hero.classList.add('zoom-in-hero');
+        });
+      }
+      if (preloader) {
+        var observer = new MutationObserver(function() {
+          if (preloader.style.display === 'none') {
+            animateHeros();
+            observer.disconnect();
+          }
+        });
+        observer.observe(preloader, { attributes: true, attributeFilter: ['style'] });
+        if (preloader.style.display === 'none') {
+          animateHeros();
+        }
+      } else {
+        setTimeout(animateHeros, 200);
+      }
+    });
+  </script>
+</body>
+</html> 

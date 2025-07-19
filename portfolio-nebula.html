@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Nebula Project - Portfolio</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .hero-bg-zoom {
+      position: relative;
+      background: url('neon%20image/milad-fakurian-58Z17lnVS4U-unsplash.jpg') center center/cover no-repeat;
+      min-height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: transform 1.2s cubic-bezier(0.4,0,0.2,1), filter 1.2s cubic-bezier(0.4,0,0.2,1);
+      transform: scale(1.08);
+      filter: blur(4px);
+    }
+    .hero-bg-zoom::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,0.75);
+      z-index: 1;
+    }
+    .hero-bg-zoom .container, .hero-bg-zoom .row {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-bg-zoom.zoom-in-hero {
+      transform: scale(1);
+      filter: blur(0);
+    }
+  </style>
+</head>
+<body>
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <!-- Project Hero Section -->
+    <section class="hero section light-background hero-bg-zoom" data-aos="fade-up">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <a href="index.html#portfolio" class="btn btn-outline-secondary mb-4"><i class="bi bi-arrow-left"></i> Back to Portfolio</a>
+            <h1 class="mb-3">Nebula Project</h1>
+            <h4 class="text-muted mb-4">Multi-Phase Brain-Inspired Artificial Intelligence System</h4>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-calendar3 me-2"></i>
+                  <span><strong>Duration:</strong> Ongoing (2023 - Present)</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-person-workspace me-2"></i>
+                  <span><strong>Role:</strong> Lead Developer & Architect</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-github me-2"></i>
+                  <span><strong>Type:</strong> Research & Development</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-code-slash me-2"></i>
+                  <span><strong>Languages:</strong> C++, Python, Rust</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-cpu me-2"></i>
+                  <span><strong>Architecture:</strong> Modular Neural System</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-lightbulb me-2"></i>
+                  <span><strong>Innovation:</strong> Brain-Inspired AI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="section" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h3 class="mb-4"><i class="bi bi-info-circle me-2"></i>Project Overview</h3>
+            <p class="lead">Nebula is a revolutionary multi-phase artificial intelligence system designed to simulate cognitive processes using modular, biologically plausible architectures. Unlike traditional AI approaches that rely on large language models (LLMs) or transformer-based systems, Nebula focuses on creating brain-inspired neural networks that mirror real neural systems.</p>
+            <p>The project represents a paradigm shift in AI development, moving away from black-box neural networks toward transparent, interpretable systems that can explain their reasoning and learning processes. This approach enables better understanding of AI decision-making and creates more reliable, trustworthy systems.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-target me-2"></i>Key Objectives</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle text-success me-2"></i>Simulate brain-like cognition</li>
+                  <li><i class="bi bi-check-circle text-success me-2"></i>Create interpretable AI systems</li>
+                  <li><i class="bi bi-check-circle text-success me-2"></i>Enable multi-modal learning</li>
+                  <li><i class="bi bi-check-circle text-success me-2"></i>Develop curiosity-driven exploration</li>
+                  <li><i class="bi bi-check-circle text-success me-2"></i>Build scalable neural architectures</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section class="section light-background" data-aos="fade-up" data-aos-delay="200">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-diagram-3 me-2"></i>Technical Architecture</h3>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-1-circle me-2"></i>Phase n1 (Python Foundation)</h5>
+                <ul>
+                  <li><strong>Core Memory Systems:</strong> Implemented foundational memory structures for storing and retrieving information</li>
+                  <li><strong>Learning Mechanisms:</strong> Developed basic learning algorithms that adapt based on input patterns</li>
+                  <li><strong>Semantic Mapping:</strong> Created systems for associating concepts, properties, and categories</li>
+                  <li><strong>Pattern Recognition:</strong> Built algorithms for identifying and learning from data patterns</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-2-circle me-2"></i>Phase n2 (C++/Rust Advanced)</h5>
+                <ul>
+                  <li><strong>Modular Brain Regions:</strong> Cortex, thalamus, hippocampus, basal ganglia, brainstem, limbic system</li>
+                  <li><strong>Multi-Modal Learning:</strong> Text, sound, shape, and function processing capabilities</li>
+                  <li><strong>Semantic Map:</strong> Advanced definitions, properties, and category management</li>
+                  <li><strong>Curiosity System:</strong> Drives exploration and learning through unknown detection</li>
+                  <li><strong>Neural Metrics:</strong> Real-time neuron and synapse counting for biological realism</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section" data-aos="fade-up" data-aos-delay="300">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-star me-2"></i>Key Features & Innovations</h3>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-brain display-4 text-primary mb-3"></i>
+              <h5>Brain-Inspired Design</h5>
+              <p>Modular architecture mimicking real neural systems with specialized regions for different cognitive functions.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-eye display-4 text-primary mb-3"></i>
+              <h5>Interpretable AI</h5>
+              <p>Transparent decision-making processes that can explain reasoning and learning steps, unlike black-box LLMs.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-lightbulb display-4 text-primary mb-3"></i>
+              <h5>Curiosity-Driven Learning</h5>
+              <p>Intelligent exploration system that identifies unknowns and drives autonomous learning and discovery.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-collection display-4 text-primary mb-3"></i>
+              <h5>Multi-Modal Processing</h5>
+              <p>Capability to learn from and process text, sound, shapes, and functional patterns simultaneously.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-speedometer2 display-4 text-primary mb-3"></i>
+              <h5>Real-Time Metrics</h5>
+              <p>Live monitoring of neural activity including neuron counts, synapse formation, and learning progress.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center p-3">
+              <i class="bi bi-terminal display-4 text-primary mb-3"></i>
+              <h5>Interactive CLI</h5>
+              <p>Command-line interface for direct interaction with the neural system and real-time experimentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section light-background" data-aos="fade-up" data-aos-delay="400">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-tools me-2"></i>Technology Stack</h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h5><i class="bi bi-code-slash me-2"></i>Core Technologies</h5>
+            <div class="row g-2">
+              <div class="col-6">
+                <span class="badge bg-primary fs-6 p-2 mb-2 d-block">C++ (Core Engine)</span>
+              </div>
+              <div class="col-6">
+                <span class="badge bg-success fs-6 p-2 mb-2 d-block">Python (n1 Phase)</span>
+              </div>
+              <div class="col-6">
+                <span class="badge bg-warning fs-6 p-2 mb-2 d-block">Rust (Modules)</span>
+              </div>
+              <div class="col-6">
+                <span class="badge bg-info fs-6 p-2 mb-2 d-block">CLI Interface</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5><i class="bi bi-gear me-2"></i>Key Libraries & Tools</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check2 me-2"></i>Custom Neural Network Framework</li>
+              <li><i class="bi bi-check2 me-2"></i>Memory Management Systems</li>
+              <li><i class="bi bi-check2 me-2"></i>Pattern Recognition Algorithms</li>
+              <li><i class="bi bi-check2 me-2"></i>Semantic Mapping Engine</li>
+              <li><i class="bi bi-check2 me-2"></i>Multi-Modal Processing Pipeline</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenges & Solutions -->
+    <section class="section" data-aos="fade-up" data-aos-delay="500">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-exclamation-triangle me-2"></i>Challenges & Solutions</h3>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card border-warning">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-question-circle me-2"></i>Key Challenges</h5>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li><strong>Biological Accuracy:</strong> Ensuring neural models accurately reflect real brain processes</li>
+                  <li><strong>Performance Optimization:</strong> Balancing computational efficiency with biological realism</li>
+                  <li><strong>Multi-Modal Integration:</strong> Coordinating different input types effectively</li>
+                  <li><strong>Scalability:</strong> Maintaining performance as neural networks grow</li>
+                  <li><strong>Interpretability:</strong> Making complex neural processes understandable</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-success">
+              <div class="card-header bg-success text-white">
+                <h5 class="mb-0"><i class="bi bi-lightbulb me-2"></i>Innovative Solutions</h5>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li><strong>Modular Architecture:</strong> Separated concerns into specialized brain regions</li>
+                  <li><strong>Hybrid Language Approach:</strong> Used C++ for performance, Rust for safety</li>
+                  <li><strong>Real-Time Monitoring:</strong> Implemented comprehensive neural metrics</li>
+                  <li><strong>Curiosity Algorithm:</strong> Developed autonomous learning triggers</li>
+                  <li><strong>Semantic Framework:</strong> Created structured knowledge representation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future Roadmap -->
+    <section class="section light-background" data-aos="fade-up" data-aos-delay="600">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-graph-up me-2"></i>Future Roadmap</h3>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card text-center h-100">
+              <div class="card-body">
+                <i class="bi bi-3-circle display-4 text-primary mb-3"></i>
+                <h5>Phase n3</h5>
+                <p>Implementation of biologically inspired neural architectures including RNNs and Self-Organizing Recurrent Networks (SORN). Enhanced learning capabilities and improved pattern recognition.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-center h-100">
+              <div class="card-body">
+                <i class="bi bi-4-circle display-4 text-primary mb-3"></i>
+                <h5>Phase n4</h5>
+                <p>Advanced cognitive functions including reasoning, planning, and creative problem-solving. Integration of emotional intelligence and social learning capabilities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-center h-100">
+              <div class="card-body">
+                <i class="bi bi-infinity display-4 text-primary mb-3"></i>
+                <h5>Long-term Vision</h5>
+                <p>Development of fully autonomous, self-improving AI systems that can understand, learn, and create without external training data or human intervention.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Impact -->
+    <section class="section" data-aos="fade-up" data-aos-delay="700">
+      <div class="container">
+        <h3 class="mb-4"><i class="bi bi-award me-2"></i>Project Impact & Achievements</h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-trophy me-2"></i>Technical Achievements</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle me-2"></i>Successfully implemented modular neural architecture</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Developed working curiosity-driven learning system</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Created interpretable AI decision-making processes</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Achieved multi-modal learning capabilities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-success text-white">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-graph-up-arrow me-2"></i>Research Contributions</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle me-2"></i>Pioneered brain-inspired AI development approach</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Demonstrated alternatives to LLM-based AI</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Advanced understanding of neural system design</li>
+                  <li><i class="bi bi-check-circle me-2"></i>Created framework for interpretable AI systems</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Badal Raj</h3>
+      <p>B. Tech CSE Student | Software Developer</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="mailto:badalrajrs@gmail.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/badal-raj-1b8b28249/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Badal Raj</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distribuited by <a href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      var preloader = document.getElementById('preloader');
+      var heros = document.querySelectorAll('.hero-bg-zoom');
+      function animateHeros() {
+        heros.forEach(function(hero) {
+          hero.classList.add('zoom-in-hero');
+        });
+      }
+      if (preloader) {
+        var observer = new MutationObserver(function() {
+          if (preloader.style.display === 'none') {
+            animateHeros();
+            observer.disconnect();
+          }
+        });
+        observer.observe(preloader, { attributes: true, attributeFilter: ['style'] });
+        if (preloader.style.display === 'none') {
+          animateHeros();
+        }
+      } else {
+        setTimeout(animateHeros, 200);
+      }
+    });
+  </script>
+</body>
+</html> 
